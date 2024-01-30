@@ -1,0 +1,11 @@
+First 8 bytes: ff d8 ff e0 00 10 4a 46
+Last 12 bytes: fe 35 52 a5 4a 27 77 a8 15 eb ff d9 (...IEND.B´. |)
+
+Then Chunks:
+IHDR = Header
+PLTE = Palette Table
+IDAT = Data Image
+IEND = End of File
+
+Open the file folder in terminal and insert:
+hexdump -C imageFileName.png
